@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --navbar-height: 59px;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img {
+    height: 40px;
+    width: 60px;
+    margin: 3px 3px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar{
+    content: "";
+        background-color: rgb(120, 149, 234);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+}
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li {
+    /* color: white;*/
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 3px 13px;
+    color: blanchedalmond;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 2px 13px;
+    display: block;
+    border-radius: 20px;
+    text-decoration:none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url("jalmahal.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h3 {
+    margin-top: 15%;
+    text-align: center;
+    font-size: 35px; font-weight: 200; letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  
+}
+#home h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight:700 ;
+    text-shadow:2px 1px 5px rgb(224, 216, 216) ;
+    text-transform: uppercase;
+}
+#home p{
+     font-size: 25px;
+     word-spacing: 2px;
+     margin-bottom: 25px;
+     text-shadow:1px 1px 1px rgb(255, 255, 255) ;
+
+}
+#services-container{
+    content: "";
+    background-image: url("fort.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+#services{
+    margin: 0px;
+    display: flex; 
+    background-size: cover;  
+}
+#services .box{
+    border: 2px solid white;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 10px;
+    background-color: rgb(184, 254, 254);
+}
+#services .box img{
+    height:80px;
+    margin: auto;
+    display: block;
+}
+#partners{
+    content: "";
+    background-image: url("services.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 54px;
+}
+.client-item{
+    padding: 34px;
+}
+#about{
+    content: "";
+    background-image: url("about.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+#contact{
+    content: "";
+    background-image: url("services.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: bottom 24px; ;
+}
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 20%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif',serif;
+}
+footer{
+    background: #000;
+    color: aliceblue;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: blueviolet;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
